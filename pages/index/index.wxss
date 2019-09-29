@@ -1,0 +1,53 @@
+.nav-wrap{
+
+}
+.nav{
+  white-space: nowrap;
+  padding:5rpx 0 ;
+}
+.nav-item{
+  padding:20rpx 45rpx;
+  font-size:30rpx;
+  display: inline-block;
+}
+.active{
+  border-bottom:5rpx solid red;
+}
+/* 视频列表 */
+.video-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5rpx;
+    justify-content: space-between;
+}
+.video-img{
+  width:48%;
+  margin-bottom:20rpx;
+}
+.hezi{
+  position:relative;
+}
+.hezi image{
+  width:100%;
+  border-radius: 10rpx;
+}
+.hezit{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  position:absolute;
+  bottom:10rpx;
+  left:0;
+  font-size:24rpx;
+  color:white;
+}
+.img-desc{
+  font-size:28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space:normal;
+  text-overflow:ellipsis;
+  word-wrap:break-noord;
+  line-clamp: 2;
+  box-orient:vertical;
+}

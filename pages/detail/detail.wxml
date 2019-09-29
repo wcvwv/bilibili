@@ -1,0 +1,21 @@
+<view>
+  <myHeader></myHeader>
+  <!-- 视频详情 -->
+  <view class="video_info" >
+    <!-- 视频标签 -->
+    <video src="{{movieDetailData.videoSrc}}"></video>
+    <!-- 视频标题 -->
+    <view class="video_title">{{movieDetailData.videoTitle}}</view>
+    <!-- 视频作者-->
+    <view class="video_detail">
+        <!-- 作者 -->
+        <text class="author">{{movieDetailData.author}}</text>
+        <!-- 播放量 -->
+        <text class="play_count">{{movieDetailData.playCount}}</text>
+        <!-- 评论量 -->
+        <text class="comment_count">{{movieDetailData.commentCount}}</text>
+        <!-- 时间 -->
+        <text class="date">{{movieDetailData.date}}</text>
+    </view>
+  </view>
+</view>

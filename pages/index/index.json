@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "myHeader":"../../components/myHeader/myHeader"
+  },
+  "navigationBarTitleText": "哔哩哔哩"
+}

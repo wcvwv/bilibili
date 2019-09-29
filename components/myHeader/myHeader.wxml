@@ -1,0 +1,18 @@
+<view class="my-title">
+<!-- logo -->
+<navigator class="logo">
+    <image class="logo-img" src="../../image/BILIBILI.png"></image>
+</navigator>
+<!-- 搜索 -->
+<view class="search">
+    <image class="search-icon" src="../../image/search.png"></image>
+</view>
+<!-- 用户 -->
+<view class="user-icon">
+    <image class="user" src="../../image/User.png"></image>
+</view>
+<!-- 下载按钮 -->
+<view class="down-app">
+    下载APP
+</view>
+</view>

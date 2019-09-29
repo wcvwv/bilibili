@@ -1,0 +1,41 @@
+<view>
+<!-- 公共头部 -->
+<myHeader></myHeader>
+<!-- 首页导航 -->
+<!-- 自己滚动的区域 -->
+<view class="nav-wrap">
+  <scroll-view class="nav" scroll-x>
+    <view class="nav-item  {{index === currentIndexNav?'active':''}}" wx:for="{{navList}}" wx:key="item.id" bindtap="clickIndex" data-index="{{index}}">{{item.text}}</view>
+  </scroll-view>
+</view>
+<!-- 轮播图 -->
+<view class="swiperBox">
+  <swiper autoplay="true" circular indicator-dots>
+    <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}">
+      <navigator>
+        <image src="{{item.imgSrc}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 视频列表 -->
+<view class="video-list">
+  <navigator url="../detail/detail?id={{item.id}}" class="video-img" wx:for="{{movieList}}" wx:key="{{item.id}}">
+      <view class="hezi">
+        <image mode="widthFix" class="image-video" src="{{item.imgSrc}}"></image>
+      <!-- 播放量 -->
+      <view class="hezit">
+          <view class="play-count-wrap">
+            <text>播放量：</text>
+            <text class="play-count">{{item.playCount}}</text>
+         </view>
+          <view class="play-count-row">
+            <text>评论量：</text>
+            <text class="comment-count">{{item.commentCount}}</text>
+          </view>
+      </view>
+  </view>
+      <view class="img-desc">{{item.desc}}</view>
+  </navigator>
+</view>
+</view>
